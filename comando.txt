@@ -1,0 +1,22 @@
+npm i typescript 
+npm i ts-node sucrase
+o "-D" instala no packege.json nos devDependencies
+npm add -D eslint @typescript-eslint/parser @typescript-eslint/eslint-plugin
+
+para ativar o lint basta usar o comando e escolher a opções a baixo:
+    npx eslint --init:
+        --> to check syntax,find problems, and enforce code style
+        --> JavaScript
+        --> none of these
+        --> Y
+        --> node
+        --> use a popular style guide
+        --> Standard
+        --> JavaScript
+        --> Y
+
+obs: isso tudo vai ser instalado no package
+
+
+npm i prettier eslint-config-prettier eslint-plugin-prettier
+npm i -D @types/express @types/cors @types/mongoose
