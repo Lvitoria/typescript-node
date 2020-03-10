@@ -1,6 +1,6 @@
-import {Router}  from 'express'
+import { Router } from 'express'
 import UserController from './controllers/UserController'
-import User from './schemas/User'
+// import User from './schemas/User'
 
 const routes = Router()
 

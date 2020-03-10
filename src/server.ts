@@ -1,3 +1,3 @@
-const app = require('./app')
+import app from './app'
 
-app.listen(3030,()=> console.log('server rodando na porta 3030 .... '));
+app.listen(3030, () => console.log('server rodando na porta 3030 .... '))

@@ -1,17 +1,16 @@
-import {Request,Response} from 'express'
+import { Request, Response } from 'express'
 import User from '../schemas/User'
-class UserController{
+class UserController {
+  public async index (req: Request, res: Response): Promise<Response> {
+    const users = await User.find()
+    return res.json(users)
+  }
 
-    public async index(req: Request,res: Response): Promise<Response>{
-       const users = await User.find()
-       return res.json(users)
-    }
-
-    public async create(req: Request,res: Response): Promise<Response>{
-        const users = await User.create(req.body)
-        console.log(users.fullName('nome completo'))
-        return res.json(users)
-     }
+  public async create (req: Request, res: Response): Promise<Response> {
+    const users = await User.create(req.body)
+    console.log(users.fullName('nome completo'))
+    return res.json(users)
+  }
 }
 
 export default new UserController()
